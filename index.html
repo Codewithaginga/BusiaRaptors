@@ -4,48 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The busia club</title>
-    <link rel="stylesheet"  href="./css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <title>THE Busia Club</title>
+    <link rel="stylesheet" href="style.css">
+    <!--closing sign-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
-
 </head>
 <body>
-
-    <section class="header">
+    <section class="header"></section>
+    
 
         <nav>
-            <a href="index.html"><img src="images/logo.jpg"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
-
-
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">TOURNAMENT</a></li>
-                    <li><a href="">DONATE</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    <div class="box-head">
+        <h1>Busia Raptors BasketBall Club</h1>
+        <p>Professional basketball team located in Busia
+            county Kenya. A great Team with enthusiatic 
+            team players both Men And Women
+        </p>
+        <a href="" class="visit-btn">Visit Us To Know More</a>
+    </div>
+    
+    </section>
 
-    <div class="text-box">
-        <h1> Busia Raptors Basketball Club</h1>
-        <p>Kenya professional Basketball team base in Busia county. Is a team with great players consit of 
-            both gender players.
+    <!-- about us-->
 
+    <section class="about">
+        <h1>About Us</h1>
+        <p>Busia Raptors was founded in 2008. Is the 
+            oldest basketball club in busia County.
+            The club has archieve several milestones
+            for past years. Busia Raptors consist of both
+            Male and Female players
         </p>
 
-        <a href="" class="visit-btn">Visit Us To Know More</a>
+        <div class="row">
+            <div class="about-col">
+
+                <h2>Sponsorship</h2>
+                <p>
+                    With partnership with various schools
+                    in the region, The club has done 
+                    a promising Job by finding highschool
+                    and Campus Sponsorship for thier players
+                    to persue higher education.
+
+                </p>
+
+            </div>
+            <div class="about-col">
+
+                <h2>Tournaments</h2>
+                <p>The team has engaged in a good number of
+                    Tournaments and championship.
+                    Winner Sigalame Opens 2020, Third Two 
+                    consercutive times in Kisumu basketball
+                    League.
+                </p>
+
+            </div>
+            <div class="about-col">
+
+                <h2>East And West </h2>
+                <p>
+                    Routinely every december, the club alway
+                    finish with a championship. Where players
+                    are being divide by there demographic 
+                    areas.
+                </p>
+
+            </div>
 
 
-    </div>
 
+        </div>
 
+    </section>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+
+        showMenu();
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+
+        hideMenu();
+    </script>
+
+    <!--Tournaments-->
+    <section class="Tourn">
+        <h1>BasketBall Games</h1>
+        <p>Busia Raptors in league games and Tournaments</p>
+
+        <div class="row">
+
+            <div class="tourn-col">
+                <img src="num1.jpg" >
+                <div class="layer">
+                    <h3>Home Ground</h3>
+                
+                </div>
+                
+            </div>
+            <div class="tourn-col">
+                <img src="kis1.jpg" >
+                <div class="layer">
+                    <h3>KISUMU</h3>
+                </div>
+            </div>
+            
+        </div>
+    
     </section>
     
 </body>
